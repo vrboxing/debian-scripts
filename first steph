@@ -73,13 +73,8 @@ sudo apt install network-mangager-openvpn-gnome -yy
 sudo apt install samba samba-common samba-libs cifs-utils libcups2 cups smbclient -yy
 sudo apt install gvfs-backends -yy
 sudo apt install net-tools -yy
-sudo apt install ssh -yyedit /etc/apt/source.list (contrib nonfree) & update upgrade
-apt-get install xorg xserver-xorg libx11-dev libxft-dev libxinerama-dev sudo gcc make wget vim git
-/sbin/adduser myuser sudo
+sudo apt install ssh -yyedit 
 
-sudo apt install p7zip p7zip-full unrar-free unzip -yy
-sudo apt install lshw -yy
-sudo apt install cmake -yy
-sudo apt install build-essential -yy
+
 
 

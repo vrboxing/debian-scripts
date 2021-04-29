@@ -17,6 +17,11 @@ git clone https://github.com/supermarin/YosemiteSanFranciscoFont & /usr/share/fo
 git clone https://github.com/powerline/fonts
 ./install.sh
 sudo cp /home/$USER/.local/share/fonts/*Powerline* /usr/share/fonts/powerline
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Ubuntu.zip
+unzip Ubuntu.zip
+mkdir -p ~/.local/share/fonts/nerdfonts/ubuntu
+mv *.ttf ~/.local/share/fonts/nerdfonts/ubuntu
+fc-cache -f -v
 
 #Desktop Tools
 sudo apt install synaptic -yy
@@ -37,8 +42,8 @@ sudo apt install digikam -yy
 sudo apt install darktable -yy
 sudo apt install llvm clang -yy
 
-
 #Browser
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome*.deb
 sudo apt-get install firefox-esr
@@ -48,6 +53,7 @@ sudo apt install neovim
 # Install vim plug from github
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+sudo apt install python3-pip python3-sphinx -yy
 sudo apt install lolcat -yy
 sudo apt install figlet -yy
 sudo apt install feh -yy
@@ -64,7 +70,7 @@ sudo apt install alsa-player-daemon alsa-player-common alsa-player-alsa -yy
 sudo apt install libao-common libao-dbd libao-dev libao4 -yy
 sudo apt install libasound2 libasound-data libasound-dev libasound-doc libasound-plugins -yy
 sudo apt install exfat-utils -yy
-sudo apt-get install vlc mplayer
+sudo apt-get install vlc mplayer mpv audacity obs-studio -yy
 
 #Network
 sudo apt install network-manager -yy
@@ -78,8 +84,27 @@ sudo apt install ssh -yy
 wget https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
 dpkg -i *.deb
 sudo apt-get update
-sudo apt install nordvpn 
+sudo apt install nordvpn
 
+#meetpus and messages
+sudo apt install libglib2.0-0 libgstreamer-plugins-base1.0-0 libxcb-shape0 libxcb-shm0 libxcb-xfixes-$
+wget https://zoom.us/client/latest/zoom_amd64.deb
+sudo dpkg -i zoom_amd64.deb
 
+wget https://telegram.org/dl/desktop/linux
+tar xvf tsetup*.tar.xz
+mv Telegram/ /opt/
+ln -sf /opt/Telegram/Telegram /usr/bin/telegram
 
+wget https://discord.com/api/download?platform=linux&format=deb
+sudo dpk -i discord.deb
+sudo apt-get -f install
+
+#polybar
+sudo apt install build-essential cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev libxcb-ic$
+cd polybar && ./build.sh
+echo "killall -q polybar" > ~/.config/polybar/launch.sh
+echo "polybar example >>/tmp/polybar1.log 2>&1 &" >> ~/.config/polybar/launch.sh
+echo "Bars launched..." >> ~/.config/polybar/launch.sh
+chmod +x ~/.config/polybar/launch.sh
 

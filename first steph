@@ -137,3 +137,6 @@ sudo ln -sf ~/genymotion/genymotion /usr/local/bin/
 .start-tibia-launcher.sh
 ~/Tibia$ sudo ln -sf ~/Tibia/Tibia /usr/local/bin/tibia
 
+Config .xinitrc
+exec dwm
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1

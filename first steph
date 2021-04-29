@@ -79,6 +79,10 @@ sudo apt install gimp -yy
 sudo apt install inkscape -yy
 sudo apt install digikam -yy
 sudo apt install darktable -yy
+sudo apt install g++ cmake build-essential qt5-default qttools5-dev-tools libqt5svg5-dev qttools5-dev
+sudo apt install libqt5dbus5 libqt5network5 libqt5core5a libqt5widgets5 libqt5gui5 libqt5svg5
+sudo apt install git openssl ca-certificates
+
 
 #Network
 sudo apt install network-manager -yy

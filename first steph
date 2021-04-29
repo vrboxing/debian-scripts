@@ -1,7 +1,85 @@
 edit /etc/apt/source.list (contrib nonfree) & update upgrade
-apt-get install xorg xserver-xorg libx11-dev libxft-dev libxinerama-dev sudo gcc make
+apt-get install xorg xserver-xorg libx11-dev libxft-dev libxinerama-dev sudo gcc make wget vim git
 /sbin/adduser myuser sudo
-sudo apt-get install feh compton
+
+sudo apt install p7zip p7zip-full unrar-free unzip -yy
+sudo apt install lshw -yy
+sudo apt install cmake -yy
+sudo apt install build-essential -yy
 sudo apt-get install fonts-font-awesome
+sudo apt-get install feh compton
+
+#Fonts
+sudo apt install ttf-mscorefonts-installer
+sudo apt-get install fonts-font-awesome
+wget https://assets.ubuntu.com/v1/fad7939b-ubuntu-font-family-0.83.zip & /usr/share/fonts/truetype/ub$
+git clone https://github.com/supermarin/YosemiteSanFranciscoFont & /usr/share/fonts/truetype/yosemite$
+git clone https://github.com/powerline/fonts
+./install.sh
+sudo cp /home/$USER/.local/share/fonts/*Powerline* /usr/share/fonts/powerline
+
+#Desktop Tools
+sudo apt install synaptic -yy
+sudo apt install thunar thunar-media-tags-plugin thunar-vcs-plugin thunar-volman -yy
+sudo apt install thunar thunar-media-tags-plugin thunar-vcs-plugin thunar-volman -yy
+sudo apt install cups cups-pdf -yy
+sudo apt install nitrogen -yy
+sudo apt install lxappearance -yy
+sudo apt install qt5-style-plugins -yy
+sudo apt-get install qbittorrent -yy
+sudo apt install gufw -yy
+sudo apt install htop -yy
+sudo apt install gparted -yy
+sudo apt install bleachbit -yy
+sudo apt install gimp -yy
+sudo apt install inkscape -yy
+sudo apt install digikam -yy
+sudo apt install darktable -yy
+sudo apt install llvm clang -yy
+
+
+#Browser
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome*.deb
+sudo apt-get install firefox-esr
+
+#Neovim
+sudo apt install neovim
+# Install vim plug from github
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+sudo apt install lolcat -yy
+sudo apt install figlet -yy
+sudo apt install feh -yy
+sudo apt install ranger -yy
+sudo apt install rxvt-unicode -yy
+sudo apt install powerline -yy
+
+#Sounds, Codecs and Players
+sudo apt install pulseaudio pulseaudio-utils -yy
+sudo apt install pavucontrol -yy
+sudo apt install pulseaudio-dlna pulseaudio-equalizer gstreamer1.0-pulseaudio -yy
+sudo apt install alsa-utils gstreamer1.0-alsa alsamixergui alsaplayer-gtk -yy
+sudo apt install alsa-player-daemon alsa-player-common alsa-player-alsa -yy
+sudo apt install libao-common libao-dbd libao-dev libao4 -yy
+sudo apt install libasound2 libasound-data libasound-dev libasound-doc libasound-plugins -yy
+sudo apt install exfat-utils -yy
+sudo apt-get install vlc mplayer
+
+#Network
+sudo apt install network-manager -yy
+sudo apt install network-manager-openvpn -yy
+sudo apt install network-mangager-openvpn-gnome -yy
+sudo apt install samba samba-common samba-libs cifs-utils libcups2 cups smbclient -yy
+sudo apt install gvfs-backends -yy
+sudo apt install net-tools -yy
+sudo apt install ssh -yyedit /etc/apt/source.list (contrib nonfree) & update upgrade
+apt-get install xorg xserver-xorg libx11-dev libxft-dev libxinerama-dev sudo gcc make wget vim git
+/sbin/adduser myuser sudo
+
+sudo apt install p7zip p7zip-full unrar-free unzip -yy
+sudo apt install lshw -yy
+sudo apt install cmake -yy
+sudo apt install build-essential -yy
 
 

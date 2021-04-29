@@ -22,6 +22,8 @@ unzip Ubuntu.zip
 mkdir -p ~/.local/share/fonts/nerdfonts/ubuntu
 mv *.ttf ~/.local/share/fonts/nerdfonts/ubuntu
 fc-cache -f -v
+sudo apt-get -f install fonts-noto -yy
+
 
 #Desktop Tools
 sudo apt install synaptic -yy
@@ -104,7 +106,7 @@ wget https://www.teamspeak.com/en/downloads/#
 chmod +x TeamSpeak3-Client-linux_amd64-3.5.6.run
 ./TeamSpeak3-Client-linux_amd64-3.5.6.run
 accept termines y
-mv TeamSpeak3-Client-linux_amd64 ~/Telegram
+mv TeamSpeak3-Client-linux_amd64 ~/TeamSpeak3-Client-linux_amd64
 ./ts3client_runscript.sh
 
 #polybar

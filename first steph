@@ -100,6 +100,13 @@ wget https://discord.com/api/download?platform=linux&format=deb
 sudo dpk -i discord.deb
 sudo apt-get -f install
 
+wget https://www.teamspeak.com/en/downloads/#
+chmod +x TeamSpeak3-Client-linux_amd64-3.5.6.run
+./TeamSpeak3-Client-linux_amd64-3.5.6.run
+accept termines y
+mv TeamSpeak3-Client-linux_amd64 ~/Telegram
+./ts3client_runscript.sh
+
 #polybar
 sudo apt install build-essential cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev libxcb-ic$
 cd polybar && ./build.sh
@@ -108,3 +115,4 @@ echo "polybar example >>/tmp/polybar1.log 2>&1 &" >> ~/.config/polybar/launch.sh
 echo "Bars launched..." >> ~/.config/polybar/launch.sh
 chmod +x ~/.config/polybar/launch.sh
 
+#sudo apt install virtualbox virtualbox-ext-pack virtualbox-dkms virtualbox-guest-additions-iso virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 -yy

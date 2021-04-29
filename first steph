@@ -62,6 +62,7 @@ sudo apt install feh -yy
 sudo apt install ranger -yy
 sudo apt install rxvt-unicode -yy
 sudo apt install powerline -yy
+sudo apt-get install mousepad
 
 #Sounds, Codecs and Players
 sudo apt install pulseaudio pulseaudio-utils -yy

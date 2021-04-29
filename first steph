@@ -133,6 +133,7 @@ sudo ln -sf ~/genymotion/gmtool /usr/local/bin/
 sudo ln -sf ~/genymotion/genyshell /usr/local/bin/
 sudo ln -sf ~/genymotion/genymotion /usr/local/bin/
 
-
-
+#Games Tibia
+.start-tibia-launcher.sh
+~/Tibia$ sudo ln -sf ~/Tibia/Tibia /usr/local/bin/tibia
 

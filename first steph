@@ -73,7 +73,12 @@ sudo apt install network-mangager-openvpn-gnome -yy
 sudo apt install samba samba-common samba-libs cifs-utils libcups2 cups smbclient -yy
 sudo apt install gvfs-backends -yy
 sudo apt install net-tools -yy
-sudo apt install ssh -yyedit 
+sudo apt install ssh -yy
+
+wget https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
+dpkg -i *.deb
+sudo apt-get update
+sudo apt install nordvpn 
 
 
 

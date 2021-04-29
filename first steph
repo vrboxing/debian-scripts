@@ -146,8 +146,18 @@ sudo dpkg --add-architecture i386
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
 sudo apt-key add winehq.key
 wget https://dl.winehq.org/wine-builds/debian/
-vim /etc/apt/sources.list.d/  & deb https://dl.winehq.org/wine-builds/debian/ buster main
+vim /etc/apt/sources.list.d/  
+deb https://dl.winehq.org/wine-builds/debian/ buster main
+deb https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_10 ./
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DFA175A75104960E
 sudo apt update
 sudo apt install --install-recommends winehq-stable
+winecfg
+Accept Wingecko
+sudo apt -get install winetricks 
+open terminal 
+serach and install mfc42 vcrun6
 
-
+#Nmcli SOlved!
+comment /etc/network/interfaces/  ethernet devices 
+nmcli connect all devices!

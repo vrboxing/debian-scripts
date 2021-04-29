@@ -38,10 +38,6 @@ sudo apt install gufw -yy
 sudo apt install htop -yy
 sudo apt install gparted -yy
 sudo apt install bleachbit -yy
-sudo apt install gimp -yy
-sudo apt install inkscape -yy
-sudo apt install digikam -yy
-sudo apt install darktable -yy
 sudo apt install llvm clang -yy
 
 #Browser
@@ -75,6 +71,15 @@ sudo apt install libasound2 libasound-data libasound-dev libasound-doc libasound
 sudo apt install exfat-utils -yy
 sudo apt-get install vlc mplayer mpv audacity obs-studio -yy
 
+#Images and Docs
+sudo apt install calibre
+sudo apt-get install xfce4-screenshooter
+sudo apt-get install eog
+sudo apt install gimp -yy
+sudo apt install inkscape -yy
+sudo apt install digikam -yy
+sudo apt install darktable -yy
+
 #Network
 sudo apt install network-manager -yy
 sudo apt install network-manager-openvpn -yy
@@ -83,6 +88,7 @@ sudo apt install samba samba-common samba-libs cifs-utils libcups2 cups smbclien
 sudo apt install gvfs-backends -yy
 sudo apt install net-tools -yy
 sudo apt install ssh -yy
+
 
 wget https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
 dpkg -i *.deb

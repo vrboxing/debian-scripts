@@ -1,0 +1,7 @@
+edit /etc/apt/source.list (contrib nonfree) & update upgrade
+apt-get install xorg xserver-xorg libx11-dev libxft-dev libxinerama-dev sudo gcc make
+/sbin/adduser myuser sudo
+sudo apt-get install feh compton
+sudo apt-get install fonts-font-awesome
+
+

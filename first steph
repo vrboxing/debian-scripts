@@ -41,6 +41,8 @@ sudo apt install htop -yy
 sudo apt install gparted -yy
 sudo apt install bleachbit -yy
 sudo apt install llvm clang -yy
+sudo apt install default-jdk -yy
+sudo apt install apt-transport-https ca-certificates dirmngr gnupg software-properties-common
 wget https://mega.nz/#!LJ9FyK7b!t88t6YBo2Wm_ABkSO7GikxujDF5Hddng9bgDb8fwoJQ
 chmod +x JD2Setup_x64.sh
 ./JD2Setup_x64.sh

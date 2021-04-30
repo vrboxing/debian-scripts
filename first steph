@@ -41,6 +41,11 @@ sudo apt install htop -yy
 sudo apt install gparted -yy
 sudo apt install bleachbit -yy
 sudo apt install llvm clang -yy
+wget https://mega.nz/#!LJ9FyK7b!t88t6YBo2Wm_ABkSO7GikxujDF5Hddng9bgDb8fwoJQ
+chmod +x JD2Setup_x64.sh
+./JD2Setup_x64.sh
+
+
 
 #Browser
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -108,6 +113,13 @@ wget https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0
 dpkg -i *.deb
 sudo apt-get update
 sudo apt install nordvpn
+/etc/openvpn
+sudo wget https://downloads.nordcdn.com/configs/archives/servers/ovpn.zip
+cd /etc/openvpn/ovpn_udp/
+cd /etc/openvpn/ovpn_tcp/
+openvpn /etc/openvpn/ovpn_udp/us2957.nordvpn.com.udp.ovpn
+https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Raspberry-Pi-Elementary-OS-and-Linux-Mint.htm#Settings
+man nordvpn
 
 #meetpus and messages
 sudo apt install libglib2.0-0 libgstreamer-plugins-base1.0-0 libxcb-shape0 libxcb-shm0 libxcb-xfixes-$

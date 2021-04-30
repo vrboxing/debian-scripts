@@ -72,6 +72,11 @@ sudo apt install libao-common libao-dbd libao-dev libao4 -yy
 sudo apt install libasound2 libasound-data libasound-dev libasound-doc libasound-plugins -yy
 sudo apt install exfat-utils -yy
 sudo apt-get install vlc mplayer mpv audacity obs-studio -yy
+curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update && sudo apt-get install spotify-client
+sudo dpkg -i musixmatch_3.10.4043-master.20200211001_amd64.deb
+
 
 #Images and Docs
 sudo apt install calibre -yy

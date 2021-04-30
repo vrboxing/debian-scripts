@@ -2,16 +2,18 @@ edit /etc/apt/source.list (contrib nonfree) & update upgrade
 apt-get install xorg xserver-xorg libx11-dev libxft-dev libxinerama-dev sudo gcc make wget vim git
 /sbin/adduser myuser sudo
 
+
 sudo apt install p7zip p7zip-full unrar-free unzip -yy
 sudo apt install lshw -yy
 sudo apt install cmake -yy
 sudo apt install build-essential -yy
-sudo apt-get install fonts-font-awesome
+sudo apt-get install net-tools -yy
 sudo apt-get install feh compton
 
-#Fonts
-sudo apt install ttf-mscorefonts-installer
-sudo apt-get install fonts-font-awesome
+#Fontssudo 
+sudo apt-get install fonts-font-awesome -yy
+sudo apt install ttf-mscorefonts-installer -yy
+sudo apt-get install fonts-font-awesome -yy
 wget https://assets.ubuntu.com/v1/fad7939b-ubuntu-font-family-0.83.zip & /usr/share/fonts/truetype/ub$
 git clone https://github.com/supermarin/YosemiteSanFranciscoFont & /usr/share/fonts/truetype/yosemite$
 git clone https://github.com/powerline/fonts
@@ -72,8 +74,8 @@ sudo apt install exfat-utils -yy
 sudo apt-get install vlc mplayer mpv audacity obs-studio -yy
 
 #Images and Docs
-sudo apt install calibre
-sudo apt-get install xfce4-screenshooter
+sudo apt install calibre -yy
+sudo apt-get install xfce4-screenshooter-yy
 sudo apt-get install eog
 sudo apt install gimp -yy
 sudo apt install inkscape -yy
@@ -82,6 +84,7 @@ sudo apt install darktable -yy
 sudo apt install g++ cmake build-essential qt5-default qttools5-dev-tools libqt5svg5-dev qttools5-dev
 sudo apt install libqt5dbus5 libqt5network5 libqt5core5a libqt5widgets5 libqt5gui5 libqt5svg5
 sudo apt install git openssl ca-certificates
+
 
 
 #Network

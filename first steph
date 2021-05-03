@@ -158,6 +158,15 @@ chmod +x ~/.config/polybar/launch.sh
 sudo apt install build-essential dkms linux-headers-$(uname -r)
 https://www.virtualbox.org/wiki/Linux_Downloads
 dpkg -i *.deb
+#Config Virtual box for test(server) https://bit.ly/3eS1SY0
+
+#PostgreSQL
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update
+sudo apt-get -y install postgresql
+sudo pg_ctlcluster 12 main start
+
 
 wget https://www.genymotion.com/download-handler?download=ubu_first_64_download_link
 chmod +x  genymotion-3.2.1-linux_x64.bin

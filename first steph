@@ -205,4 +205,5 @@ serach and install mfc42 vcrun6
 comment /etc/network/interfaces/  ethernet devices 
 nmcli connect all devices!
 the best way for change dns is nmtui ignore automatically dns x ok! deactivate and activate!
+nmcli -p connection show (myinterface)  check properities dns4.1 or 2
 

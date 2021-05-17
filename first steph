@@ -188,7 +188,7 @@ Config mouse left-handed
 sudo apt-get install xinput
 xinput --list
 xinput --get-button-map id (#mine is 10)
-xinput --get-button-map 10 3 2 1 
+xinput --set-button-map 10 3 2 1 
 
 
 #Wine
